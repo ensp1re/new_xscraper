@@ -14,6 +14,6 @@ COPY package*.json ./
 COPY data.json ./data.json
 COPY proxies.txt ./proxies.txt
 RUN npm install --force --production
-EXPOSE 4000
+EXPOSE 4005
 CMD ["node", "dist/src/main"]
 
