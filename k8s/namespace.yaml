@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: twitter-api
+  labels:
+    app: twitter-api
+    environment: production
+    version: v1.0.0
+  annotations:
+    description: 'Twitter API scraping service namespace'
+    maintainer: 'devops@company.com'

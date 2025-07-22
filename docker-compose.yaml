@@ -1,0 +1,12 @@
+services:
+  # Main application service
+  twitter-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: twitter-api-app
+    restart: unless-stopped
+    ports:
+      - '4005:4005'
+    env_file::
+      - .env
